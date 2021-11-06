@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App Lit Element Simple Starter Kit</title>
+</head>
+<body>
+    <style>
+        * { background-color: red !important }
+    </style>
+    <h2>Use the <code>slot</code> element to render children</h2>
+    <h3>When slot content is in shadow - it will have white background</h3>
+    <slot-mover>
+        <p>1st Paragraph</p>
+        <p slot="first">2nd Paragraph</p>
+        <p>3rd Paragraph</p>
+        <p slot="third">4th Paragraph</p>
+        <p>5th Paragraph</p>
+    </slot-mover>
+    <script type="module" src="/src/index.ts"></script>
+</body>
+</html>
